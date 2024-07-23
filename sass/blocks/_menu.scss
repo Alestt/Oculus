@@ -34,6 +34,20 @@
   img{
     max-width: 100%;
   }
+  button {
+    color: inherit;
+    font-size: inherit;
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .section__title {
+    text-transform: uppercase;
+    font-weight: 400;
+    }
   
   body {
     font-family: 'Helvetica', sans-serif;
@@ -54,26 +68,26 @@
   }
   
   .nav {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     height: 80px;
-  }
+}
 .menu {
     display: flex;
     gap: 0 20px;
-  }
-  /* .menu__list {
-  }
-  .menu__link {
-  }
-  .logo {
-  }
-  .basket {
+}
+
+.logo {
+  justify-self: center;
+}
+
+.basket {
     position: relative;
-  } */
+    justify-self: end;
+}
   
-  .basket--on span {
+.basket--on span {
     position: absolute;
     bottom: 0;
     right: -2px;
@@ -86,4 +100,4 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
